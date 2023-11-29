@@ -5,9 +5,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
-## Unrelease
+## 1.0.1
 
-**Release data:** `N/A`
+**Release data:** `2023-11-29`
 
 ### Changed
 
