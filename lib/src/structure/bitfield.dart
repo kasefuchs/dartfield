@@ -21,8 +21,8 @@ class BitField<BitType extends Enum> {
   void remove(BitType bit) => value &= ~bit.flag;
 
   /// Check if a specific bit flag is present in the field.
-  bool has(BitType bit) => (value & bit.flag) == bit.flag;
+  bool contains(BitType bit) => (value & bit.flag) == bit.flag;
 
   /// Check if a specific bit flag is missing from the field.
-  bool missing(BitType bit) => !has(bit);
+  bool missing(BitType bit) => !contains(bit);
 }

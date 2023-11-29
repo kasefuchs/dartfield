@@ -28,7 +28,7 @@ void main() {
     test('should detect if bit exists', () {
       final BitField<Bits> bitField = BitField<Bits>.fromInt(3);
 
-      final bool bitExists = bitField.has(Bits.first);
+      final bool bitExists = bitField.contains(Bits.first);
 
       expect(bitExists, true);
     });

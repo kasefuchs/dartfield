@@ -25,5 +25,5 @@ void main() {
   final BitField<MemberPermissions> intBitField = BitField.fromInt(38);
 
   // Check if it has manageGuild flag.
-  print(intBitField.has(MemberPermissions.manageGuild));
+  print(intBitField.contains(MemberPermissions.manageGuild));
 }
