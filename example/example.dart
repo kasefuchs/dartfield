@@ -18,12 +18,24 @@ void main() {
     ..add(MemberPermissions.createInvites)
     ..add(MemberPermissions.manageChannels);
 
+  // Or set it via braces.
+  emptyBitField[MemberPermissions.createInvites] = true;
+
   // Get enum value.
   print(emptyBitField.value);
 
   // Create bitfield from int.
-  final BitField<MemberPermissions> intBitField = BitField.fromInt(38);
+  final BitField<MemberPermissions> intBitField = BitField.fromInt(17);
 
   // Check if it has manageGuild flag.
   print(intBitField.contains(MemberPermissions.manageGuild));
+
+  // Or get it via braces.
+  print(intBitField[MemberPermissions.manageChannels]);
+
+  // Check if it missing createInvites flag.
+  print(intBitField.missing(MemberPermissions.createInvites));
+
+  // Check equality of bitfields.
+  print(intBitField == emptyBitField);
 }

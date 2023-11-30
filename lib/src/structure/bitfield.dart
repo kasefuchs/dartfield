@@ -25,4 +25,18 @@ class BitField<BitType extends Enum> {
 
   /// Check if a specific bit flag is missing from the field.
   bool missing(BitType bit) => !contains(bit);
+
+  /// Gets value of a specific bit flag is present in the field.
+  bool operator [](BitType bit) => contains(bit);
+
+  /// Sets value of a specific bit flag is present in the field.
+  void operator []=(BitType bit, bool value) => value ? add(bit) : remove(bit);
+
+  /// Check if bitfield values equals.
+  @override
+  bool operator ==(Object other) => other is BitField && other.value == value;
+
+  /// Gets hash code of field value.
+  @override
+  int get hashCode => value.hashCode;
 }

@@ -5,9 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## Unreleased
+
+**Release date:** `N/A`
+
+### Added
+
+- Ability to use `[]` and `[]=` operators on BitField.
+- Ability to compare BitFields.
+
 ## 1.0.1
 
-**Release data:** `2023-11-29`
+**Release date:** `2023-11-29`
 
 ### Changed
 
