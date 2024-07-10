@@ -14,6 +14,12 @@ class BitField<BitType extends Enum> {
   /// Create bit field from int.
   BitField.fromInt(int value) : value = BigInt.from(value);
 
+  /// Create bit field from JSON int.
+  factory BitField.fromJson(int value) => BitField.fromInt(value);
+
+  /// Return bit field in JSON format.
+  int toJson() => value.toInt();
+
   /// Add a bit flag to the field.
   void add(BitType bit) => value |= bit.flag;
 
