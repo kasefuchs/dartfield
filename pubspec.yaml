@@ -1,6 +1,6 @@
 name: dartfield
 description: A simple and customizable Dart implementation of BitField that uses enum to represent bits.
-version: 1.2.0
+version: 1.2.1
 repository: https://codeberg.org/kasefuchs/dartfield
 issue_tracker: https://codeberg.org/kasefuchs/dartfield/issues
 
