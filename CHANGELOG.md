@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 - Add `BitField.toString` method.
 
+### Changed
+
+- Migrate repository and issue tracker to [Codeberg](https://codeberg.org/kasefuchs/dartfield).
+
 ## 1.2.0
 
 **Release date:** `2024-07-10`

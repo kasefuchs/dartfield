@@ -54,7 +54,7 @@ $ flutter pub add dartfield
 
 ## 🎈 Usage <a name="usage"></a>
 
-Usage examples can be found on [Forgejo](https://git.kasefuchs.su/kasefuchs/dartfield/src/branch/main/example) and [GitHub](https://github.com/kasefuchs/dartfield/tree/main/example) or directly on [pub.dev](https://pub.dev/packages/dartfield/example)
+Usage examples can be found on [Codeberg](https://codeberg.org/kasefuchs/dartfield/src/branch/main/example) and [GitHub](https://github.com/kasefuchs/dartfield/tree/main/example) or directly on [pub.dev](https://pub.dev/packages/dartfield/example)
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
