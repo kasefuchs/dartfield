@@ -17,9 +17,6 @@ class BitField<BitType extends Enum> {
   /// Create bit field from JSON int.
   factory BitField.fromJson(int value) => BitField.fromInt(value);
 
-  /// Return bit field in JSON format.
-  int toJson() => value.toInt();
-
   /// Add a bit flag to the field.
   void add(BitType bit) => value |= bit.flag;
 
@@ -42,7 +39,12 @@ class BitField<BitType extends Enum> {
   @override
   bool operator ==(Object other) => other is BitField && other.value == value;
 
-  /// Gets hash code of field value.
+  /// Return bit field in JSON format.
+  int toJson() => value.toInt();
+
+  @override
+  String toString() => 'BitField(bitType: $BitType, value: $value)';
+
   @override
   int get hashCode => value.hashCode;
 }

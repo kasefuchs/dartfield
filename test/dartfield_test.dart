@@ -40,5 +40,13 @@ void main() {
 
       expect(bitMissing, true);
     });
+
+    test('should return string representation', () {
+      final BitField<Bits> bitField = BitField<Bits>.fromInt(5);
+
+      final String representation = bitField.toString();
+
+      expect(representation, 'BitField(bitType: Bits, value: 5)');
+    });
   });
 }
